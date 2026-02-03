@@ -118,10 +118,11 @@ setInterval(() => {
   timerEl.innerText = `Time Left: ${h}h ${m}m ${s}s`;
 }, 1000);
 
-const session = JSON.parse(localStorage.getItem("session"));
+// const session = JSON.parse(localStorage.getItem("session"));
 
 if (!session) {
   alert("Login required");
   location.href = "index.html";
 }
+
 
